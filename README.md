@@ -32,7 +32,18 @@ In the list Enable All rules from Neo2_VM.
 * Download randyrants/sharpkeys
 * Map application key to caps_lock key
 
+### Ubuntu
+
+* Change Layout to Neo2
+* type following commands in terminal
+  '''xmodmap -e "keycode 135 = ISO_Level3_Shift"
+     xmodmap -pke > .Xmodmap'''
+* create / open file '~/.xinitrc' and insert 'xmodmap .Xmodmap'
+
 ## Source
 This mapping has be done by another user for Karabiner and Seil. You could find 
-it on the Neo Layout Wiki which is not online while when writing this file.
+it on the Neo Layout Wiki which is not online while writing this file.
+
+Thanks to user Tobi who implemented the idea in karabiner.
+Actually the orginal ticket is not available at the NEO servers. I found it archived [here](https://www.mail-archive.com/diskussion@neo-layout.org/msg08365.html).
 
